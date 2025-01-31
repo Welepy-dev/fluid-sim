@@ -3,6 +3,7 @@
 
 #include <raylib.h>
 #include <stdlib.h>
+#include <math.h>
 
 #define SCREEN_WIDTH 800
 #define SCREEN_HEIGHT 600
