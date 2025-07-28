@@ -3,7 +3,7 @@
 
 int	main(void)
 {
-	InitWindow(600, 400, "Fluid Simulation");
+	InitWindow(1200, 800, "Fluid Simulation");
 
 	WaterDrop droplet(Vector2{30, 30}, Vector2{15, 15});
 
@@ -12,9 +12,9 @@ int	main(void)
 		
 		BeginDrawing();
 
-		ClearBackground(DARKBLUE);
+		ClearBackground(BLACK);
 
-		DrawCircleV(droplet._pos, 15, YELLOW);
+		droplet.render();
 
 		EndDrawing();
 
