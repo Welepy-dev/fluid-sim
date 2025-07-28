@@ -1,5 +1,13 @@
 #include "../inc/raylib.h"
+#include "../inc/raymath.h"
 #include "../inc/WaterDrop.hpp"
+
+#include <cmath>
+#include <vector>
+#include <random>
+#include <iostream>
+
+
 
 int	main(void)
 {
