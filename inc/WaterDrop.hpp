@@ -2,19 +2,21 @@
 
 # include "raylib.h"
 
+#define WaterDropRadius 3
+
 class WaterDrop
 {
 	public:
-		WaterDrop();
 		WaterDrop(Vector2 pos, Vector2 vel);
-		WaterDrop(const WaterDrop &);
-		WaterDrop &operator=(const WaterDrop &);
+		WaterDrop(const WaterDrop &other);
+		WaterDrop &operator=(const WaterDrop &other);
 		~WaterDrop();
-	
-		Vector2	_pos;
-		Vector2 _vel;
-	
+
+		void	render(void);
+
 	private:
+		Vector2		_pos;
+		Vector2		_vel;
+		const int	_radius;
 
 };
-
